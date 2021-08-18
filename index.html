@@ -145,12 +145,9 @@ the Web.
 The <b>scope</b> of the Verifiable Credentials Working Group is:
         </p>
         <ul>
-          <li>Data models for verifiable credentials</li>
-          <li>Registries for extensions to the data models</li>
+          <li>Data models for verifiable credentials and presentations</li>
+          <li>Registries for the data models</li>
           <li>Proof types for verifiable credentials</li>
-          <li>Data models for the exchange of verifiable credentials and presentations</li>
-          <li>Web-based wallets for storage and sharing of verifiable credentials</li>
-          <li>APIs for the issuance and verification of verifiable credentials</li>
         </ul>
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
@@ -158,7 +155,7 @@ The <b>scope</b> of the Verifiable Credentials Working Group is:
 
             <ul class="out-of-scope">
               <li>The development of of any specific style of supporting infrastructure for a verifiable credentials ecosystem</li>
-              <li>The specification of cryptographic signature schemes</li>
+              <li>The specification of cryptographic primitives</li>
             </ul>
         </section>
 
@@ -209,10 +206,11 @@ Exclusion period <b>began</b> 25 July 2019; Exclusion period <b>ended</b> 23 Sep
             </dd>
           </dl>
           <dl>
-            <dt id="linked-data-signatures-for-verifiable-credentials-1" class="spec">Linked Data Signatures for Verifiable Credentials 1.0</dt>
+            <dt id="linked-data-integrity-1" class="spec">Linked Data Integrity 1.0</dt>
             <dd>
               <p>
-This specification defines Linked Data Signatures for Verifiable Credentials.
+This specification defines how to express proofs of integrity for bounded Linked
+Data documents such as verifiable credentials.
               </p>
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://w3c-ccg.github.io/ld-proofs/">Community Group Report</a> </p>
@@ -231,9 +229,16 @@ This specification defines Linked Data Signatures for Verifiable Credentials.
             Other non-normative documents may be created such as:
           </p>
           <ul>
-            <li>Use case and requirement documents;</li>
-            <li>Test suite and implementation report for the specification;</li>
-            <li>Primer or Best Practice documents to support web developers when designing applications.</li>
+            <li>Test suites for verifiable credential proof types:
+            <ul>
+              <li>Linked Data Integrity - Ed25519</li>
+              <li>Linked Data Integrity - BBS+</li>
+              <li>JSON Web Tokens</li>
+            </ul>
+            </li>
+            <li>Presentation Request Data Model</li>
+            <li>Storage and Sharing of Verifiable Credentials</li>
+            <li>An API for Verifiable Credential Exchange</li>
           </ul>
         </section>
 
@@ -253,14 +258,23 @@ This specification defines Linked Data Signatures for Verifiable Credentials.
 
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
-	  <p><span class='todo'>Remove this clause if the Group does not intend to move to REC:</span> In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent implementations</a> of every feature defined in the specification.</p>
-	  <p>Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
-	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
-	  <p><i class="todo">For specifications of technologies that directly impact user experience, such as content technologies, as well as protocols and APIs which impact content: </i>
-		Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
-		recommendations for maximising accessibility in implementations.</p>
-	  <p><span class='todo'>Consider adopting a healthy testing policy, such as:</span> To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
-	  <p><span class='todo'>Consider adding this clause if the Group does not intend to move to REC:</span> All new features should be supported by at least two intents to implement before being incorporated in the specification.</p>
+	  <p>
+In order to advance to
+<a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">
+Proposed Recommendation</a>, each normative specification is expected to have
+<a href="https://www.w3.org/Consortium/Process/#implementation-experience">
+at least two independent implementations</a> of every feature defined in the
+specification.
+    </p>
+	  <p>
+Each specification should contain separate sections detailing all known security
+and privacy implications for implementers, Web authors, and end users.
+    </p>
+	  <p>
+There should be testing plans for each specification, starting from the earliest
+drafts.
+    </p>
+	  <p>To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
 	</section>
 
       <section id="coordination">
