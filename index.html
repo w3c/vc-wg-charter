@@ -81,9 +81,9 @@
       </div>
 
          <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
-      on <i class="todo"><a href="https://github.com/w3c/vc-wg-charter">GitHub</a>.
+      on <a href="https://github.com/w3c/vc-wg-charter">GitHub</a>.
 
-    Feel free to raise <a href="https://github.com/w3c/vc-wg-charter/issues">issues</a></i>.
+    Feel free to raise <a href="https://github.com/w3c/vc-wg-charter/issues">issues</a>.
           </p>
 
       <section id="details">
@@ -117,7 +117,7 @@
               Team Contacts
             </th>
             <td>
-              <a href="mailto:ivan@w3.org">Ivan Herman</a> <i class="todo">(0.@ <abbr title="Full-Time Equivalent">FTE</abbr>)</i>
+              <a href="mailto:ivan@w3.org">Ivan Herman</a> (0.1 <abbr title="Full-Time Equivalent">FTE</abbr>)
             </td>
           </tr>
           <tr>
@@ -206,7 +206,7 @@ Exclusion period <b>began</b> 25 July 2019; Exclusion period <b>ended</b> 23 Sep
             </dd>
           </dl>
           <dl>
-            <dt id="linked-data-integrity-1" class="spec">Linked Data Integrity 1.0</dt>
+            <dt id="linked-data-integrity-1" class="spec">Verifiable Credential Linked Data Integrity 1.0</dt>
             <dd>
               <p>
 This specification defines how to express proofs of integrity for bounded Linked
@@ -238,43 +238,107 @@ Data documents such as verifiable credentials.
             </li>
             <li>Presentation Request Data Model</li>
             <li>Storage and Sharing of Verifiable Credentials</li>
+            <li>Privacy for Verifiable Credentials</li>
             <li>An API for Verifiable Credential Exchange</li>
           </ul>
+          <p>
+The Working Group may also update Notes published under previous charters.
+          </p>
         </section>
 
         <section id="timeline">
           <h3>Timeline</h3>
-            <p class="todo">Put here a timeline view of all deliverables.</p>
-            <ul class="todo">
-              <li>Month YYYY: First teleconference</li>
-              <li>Month YYYY: First face-to-face meeting</li>
-              <li>Month YYYY: Requirements and Use Cases for FooML</li>
-              <li>Month YYYY: FPWD for FooML</li>
-              <li>Month YYYY: Requirements and Use Cases for BarML</li>
-              <li>Month YYYY: FPWD FooML Primer</li>
-            </ul>
+          <ul>
+            <li>January 2022: First teleconference</li>
+            <li>May 2022: First face-to-face meeting</li>
+          </ul>
+          <table class="roadmap">
+            <tfoot>
+            <tr>
+              <td colspan="5" rowspan="1">
+                Note: The group will document significant changes from this initial schedule on the group home page.
+              </td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+              <th rowspan="1" colspan="1">Specification</th>
+              <th rowspan="1" colspan="1">
+                <abbr title="First Working Draft">FPWD</abbr>
+              </th>
+              <th rowspan="1" colspan="1">
+                <abbr title="Candidate Recommendation">CR</abbr>
+              </th>
+              <th rowspan="1" colspan="1">
+                <abbr title="Proposed Recommendation">PR</abbr>
+              </th>
+              <th rowspan="1" colspan="1">
+                <abbr title="Recommendation">Rec</abbr>
+              </th>
+            </tr>
+            <tr>
+              <th rowspan="1" colspan="1">
+                Verifiable Credentials Data Model 2.0
+              </th>
+              <td class="WD1" rowspan="1" colspan="1">
+                February 2022
+              </td>
+              <td class="CR" rowspan="1" colspan="1">
+                February 2022
+              </td>
+              <td class="PR" rowspan="1" colspan="1">
+                October 2023
+              </td>
+              <td class="REC" rowspan="1" colspan="1">
+                November 2023
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="1" colspan="1">
+                Verifiable Credentials Linked Data Integrity 1.0
+              </th>
+              <td class="WD1" rowspan="1" colspan="1">
+                March 2022
+              </td>
+              <td class="CR" rowspan="1" colspan="1">
+                March 2022
+              </td>
+              <td class="PR" rowspan="1" colspan="1">
+                November 2023
+              </td>
+              <td class="REC" rowspan="1" colspan="1">
+                December 2023
+              </td>
+            </tr>
+            </tbody>
+          </table>
         </section>
       </section>
 
 	<section id="success-criteria">
 	  <h2>Success Criteria</h2>
-	  <p>
+    <p>
 In order to advance to
-<a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">
-Proposed Recommendation</a>, each normative specification is expected to have
-<a href="https://www.w3.org/Consortium/Process/#implementation-experience">
-at least two independent implementations</a> of every feature defined in the
+<a href="https://www.w3.org/Consortium/Process//#RecsPR" title="Proposed Recommendation">
+Proposed Recommendation</a>, each normative specification will fulfill the
+<a href="http://www.w3.org/Consortium/Process/#implementation-experience">
+implementation experience required by the W3C Process</a> as follows:
+    </p>
+    <ul>
+      <li>
+The Working Group will seek evidence of independent interoperable uses from at
+least two independent implementations for each feature defined in the
 specification.
-    </p>
-	  <p>
-Each specification should contain separate sections detailing all known security
-and privacy implications for implementers, Web authors, and end users.
-    </p>
-	  <p>
-There should be testing plans for each specification, starting from the earliest
-drafts.
-    </p>
-	  <p>To promote interoperability, all changes made to specifications should have <a href='https://www.w3.org/2019/02/testing-policy.html'>tests</a>.</p>
+      </li>
+      <li>
+The group will there are sections in the specifications detailing any known
+security or privacy implications for implementers, Web authors, and end users.
+      </li>
+      <li>
+The group will maintain and advance test suites enabling interoperability
+testing for the specifications.
+      </li>
+    </ul>
 	</section>
 
       <section id="coordination">
