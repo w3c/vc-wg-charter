@@ -109,7 +109,8 @@
               Chairs
             </th>
             <td>
-              <a href="mailto:brent.zundel@evernym.com">Brent Zundel (Evernym)</a>
+              <a href="mailto:brent.zundel@evernym.com">Brent Zundel (Evernym)</a><br>
+              <a class="todo">additional chair TBD</a>
             </td>
           </tr>
           <tr>
@@ -231,9 +232,9 @@ Data documents such as verifiable credentials.
           <ul>
             <li>Test suites for verifiable credential proof types:
             <ul>
-              <li>Linked Data Integrity - Ed25519</li>
-              <li>Linked Data Integrity - BBS+</li>
-              <li>JSON Web Tokens</li>
+              <li>VC Linked Data Integrity - Ed25519</li>
+              <li>VC Linked Data Integrity - BBS+</li>
+              <li>VC JSON Web Tokens</li>
             </ul>
             </li>
             <li>Presentation Request Data Model</li>
@@ -249,69 +250,14 @@ The Working Group may also update Notes published under previous charters.
         <section id="timeline">
           <h3>Timeline</h3>
           <ul>
-            <li>January 2022: First teleconference</li>
-            <li>May 2022: First face-to-face meeting</li>
+            <li>WG-START +1 month: First teleconference</li>
+            <li>WG-START +2 months: FPWD for VCDM 2.0</li>
+            <li>WG-START +5 months: First face-to-face meeting</li>
+            <li>WG-START +6 months: FPWD for VCLDI 1.0</li>
+            <li>WG-START +14 months: CR for VCDM 2.0</li>
+            <li>WG-START +18 months: CR for VCLDI 1.0</li>
+            <li>WG-START +24 months: REC for all standards-track documents</li>
           </ul>
-          <table class="roadmap">
-            <tfoot>
-            <tr>
-              <td colspan="5" rowspan="1">
-                Note: The group will document significant changes from this initial schedule on the group home page.
-              </td>
-            </tr>
-            </tfoot>
-            <tbody>
-            <tr>
-              <th rowspan="1" colspan="1">Specification</th>
-              <th rowspan="1" colspan="1">
-                <abbr title="First Working Draft">FPWD</abbr>
-              </th>
-              <th rowspan="1" colspan="1">
-                <abbr title="Candidate Recommendation">CR</abbr>
-              </th>
-              <th rowspan="1" colspan="1">
-                <abbr title="Proposed Recommendation">PR</abbr>
-              </th>
-              <th rowspan="1" colspan="1">
-                <abbr title="Recommendation">Rec</abbr>
-              </th>
-            </tr>
-            <tr>
-              <th rowspan="1" colspan="1">
-                Verifiable Credentials Data Model 2.0
-              </th>
-              <td class="WD1" rowspan="1" colspan="1">
-                February 2022
-              </td>
-              <td class="CR" rowspan="1" colspan="1">
-                February 2023
-              </td>
-              <td class="PR" rowspan="1" colspan="1">
-                October 2023
-              </td>
-              <td class="REC" rowspan="1" colspan="1">
-                November 2023
-              </td>
-            </tr>
-            <tr>
-              <th rowspan="1" colspan="1">
-                Verifiable Credentials Linked Data Integrity 1.0
-              </th>
-              <td class="WD1" rowspan="1" colspan="1">
-                March 2022
-              </td>
-              <td class="CR" rowspan="1" colspan="1">
-                March 2023
-              </td>
-              <td class="PR" rowspan="1" colspan="1">
-                November 2023
-              </td>
-              <td class="REC" rowspan="1" colspan="1">
-                December 2023
-              </td>
-            </tr>
-            </tbody>
-          </table>
         </section>
       </section>
 
@@ -358,7 +304,7 @@ testing for the specifications.
         <section>
             <h3 id="w3c-coordination">W3C Groups</h3>
             <dl>
-                <dt><a href="https://www.w3.org/RCH/WG/">RDF Canonicalization and Hashing Working Group</a></dt>
+                <dt>RDF Canonicalization and Hashing Working Group <span class="todo">Note: This WG is currently being chartered</span></dt>
                 <dd>
                     To synchronize on canonicalization output expression mechanisms that might be used by the VC Linked Data Integrity specification.
                 </dd>
