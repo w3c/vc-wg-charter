@@ -186,7 +186,7 @@ The <b>scope</b> of the Verifiable Credentials Working Group is:
               <p>
 This specification defines the Verifiable Credentials Data Model 2.0 along with
 serializations of that data model. It will replace the current
-<a href="https://www.w3.org/TR/vc-data-model/">VC Data Model 1.0 Recommendation</a>.
+<a href="https://www.w3.org/TR/vc-data-model/">VC Data Model 1.1 Recommendation</a>.
               </p>
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://w3c.github.io/vc-data-model/">Editor's Draft</a> </p>
@@ -194,15 +194,15 @@ serializations of that data model. It will replace the current
               <dl>
                 <dt>
                   <p>
-<b>Adopted Draft:</b> <a href='https://w3c.github.io/vc-data-model/'>Verifiable Credentials Data Model 1.0</a>
+<b>Adopted Draft:</b> <a href='https://w3c.github.io/vc-data-model/'>Verifiable Credentials Data Model 1.1</a>
                   </p>
                   <p>
 <b>Exclusion Draft:</b>
-<a href='https://www.w3.org/TR/2019/REC-vc-data-model-20191119/'>Verifiable Credentials Data Model 1.0</a>
-Exclusion period <b>began</b> 25 July 2019; Exclusion period <b>ended</b> 23 September 2019.
+<a href='https://www.w3.org/TR/2021/REC-vc-data-model-20211109/'>Verifiable Credentials Data Model 1.1</a>
+Exclusion period <b>began</b> 11 November 2021; Exclusion period <b>ended</b> 08 January 2022.
                   </p>
                   <p>
-<b>Other Charter:</b> <a href="https://www.w3.org/2017/vc/WG/charter.html"> https://www.w3.org/2017/vc/WG/charter.html</a>
+<b>Other Charter:</b> <a href="https://www.w3.org/2020/12/verifiable-credentials-wg-charter.html"> https://www.w3.org/2020/12/verifiable-credentials-wg-charter.html</a>
                   </p>
                 </dd>
               </dl>
@@ -212,14 +212,32 @@ Exclusion period <b>began</b> 25 July 2019; Exclusion period <b>ended</b> 23 Sep
             <dt id="data-integrity-1" class="spec">Verifiable Credential Data Integrity 1.0</dt>
             <dd>
               <p>
-This specification defines how to express proofs of integrity, such as digital signatures or proofs of existence, for bounded documents such as verifiable credentials.
+This specification defines how to express proofs of integrity, such as digital
+signatures or proofs of existence, for bounded documents, such as verifiable
+credentials. Concrete serializations will be provided based on <a
+href="https://w3c.github.io/vc-data-model/#json-web-token">VC-JWT</a>, the <a
+href="https://w3c-ccg.github.io/lds-ed25519-2020/">Ed25519 Cryptosuite</a>, and
+the <a href="https://w3c-ccg.github.io/lds-ecdsa-secp256k1-2019/">Secp256k1
+Cryptosuite</a>. Concrete serializations might be provided based on the <a
+href="https://w3c-ccg.github.io/ldp-bbs2020/">BBS+ Cryptosuite</a>, if an <a
+href="https://identity.foundation/bbs-signature/">IETF BBS+ RFC</a> is published
+in time. Concrete serializations might be provided for VC-JWP, if an <a
+href="https://json-web-proofs.github.io/json-web-proofs/">IETF JWP RFC</a> is
+published in time. The final output specifications might not map directly to
+the list of input drafts. Other output serializations covering cryptographic
+primitives published in IETF RFCs not mentioned in this paragraph might be
+produced.
               </p>
 
-              <p class="draft-status"><b>Draft state:</b> <a href="https://w3c-ccg.github.io/data-integrity-spec/">Community Group Report</a> </p>
+              <p class="draft-status"><b>Draft state:</b>
+                <a href="https://w3c-ccg.github.io/data-integrity-spec/">Data Integrity</a>,
+                <a href="https://w3c.github.io/vc-data-model/#json-web-token">VC-JWT</a>,
+                <a href="https://w3c-ccg.github.io/lds-ed25519-2020/">Ed25519 Cryptosuite</a>,
+                <a href="https://w3c-ccg.github.io/lds-ecdsa-secp256k1-2019/">Secp256k1 Cryptosuite</a>,
+                <a href="https://w3c-ccg.github.io/ldp-bbs2020/">BBS+ Cryptosuite</a>
               <p class="milestone"><b>Expected completion:</b> Q4 2023</p>
             </dd>
           </dl>
-
 
         </section>
 
@@ -262,9 +280,9 @@ The Working Group may also update Notes published under previous charters.
             <li>WG-START +1 month: First teleconference</li>
             <li>WG-START +2 months: FPWD for VCDM 2.0</li>
             <li>WG-START +5 months: First face-to-face meeting</li>
-            <li>WG-START +6 months: FPWD for VCLDI 1.0</li>
+            <li>WG-START +6 months: FPWD for VCDI 1.0</li>
             <li>WG-START +14 months: CR for VCDM 2.0</li>
-            <li>WG-START +18 months: CR for VCLDI 1.0</li>
+            <li>WG-START +18 months: CR for VCDI 1.0</li>
             <li>WG-START +24 months: REC for all standards-track documents</li>
           </ul>
         </section>
