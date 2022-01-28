@@ -38,3 +38,6 @@ guarantee that all issues will result in changes satisfactory to all parties,
 nor that all parties will have sufficient time to review changes before they are
 merged into the draft.
 
+Before the draft charter is sent for Advisory Committee review it will be
+submitted to the current VCWG for approval.
+
