@@ -33,7 +33,7 @@ required, particularly while this document is in a draft state.
 PRs will be merged at the chairs' discretion, and may be merged quickly. Please
 raise an issue if changes have been made to the draft charter that you do not
 agree with. However, please keep in mind that while we will strive to address
-issues in a manner that is acceptable to those have raised them, we cannot
+issues in a manner that is acceptable to those who have raised them, we cannot
 guarantee that all issues will result in changes satisfactory to all parties,
 nor that all parties will have sufficient time to review changes before they are
 merged into the draft.
