@@ -76,6 +76,13 @@
 
       <p class="mission">The <strong>mission</strong> of the <a href="">Verifiable Credentials Working Group</a> is to make expressing, exchanging, and verifying credentials easier and more secure on the web.</p>
 
+      <p class="motivation">
+Readers that are new to this work should read the <a href="https://www.w3.org/TR/vc-data-model/">latest Verifiable
+Credentials Data Model</a>. The <a href="https://www.w3.org/TR/vc-data-model/#introduction">Introduction</a> and
+<a href="https://www.w3.org/TR/vc-data-model/#terminology">Terminology</a> may be particularly helpful to W3C Members
+seeking to better understand some the terminology used in this charter e.g., credentials vs. verifiable credentials and presentations vs. verifiable presentations.
+      </p>
+
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/98922/join">Join the Verifiable Credentials Working Group.</a></p>
       </div>
@@ -88,6 +95,14 @@
 
       <section id="details">
         <table class="summary-table">
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              See the <a href="https://www.w3.org/groups/wg/vc/charters">group status page</a> and <a href="#history">detailed change history</a>.</i>
+            </td>
+          </tr>	
           <tr id="Duration">
             <th>
               Start date
@@ -110,7 +125,7 @@
             </th>
             <td>
               <a href="mailto:brent.zundel@evernym.com">Brent Zundel (Evernym)</a><br>
-              <a class="todo">additional chair TBD</a>
+              <a href="mailto:kristina.yasuda@microsoft.com">Kristina Yasuda (Microsoft)</a>
             </td>
           </tr>
           <tr>
@@ -146,12 +161,20 @@ the Web.
 The <b>scope</b> of the Verifiable Credentials Working Group is:
         </p>
         <ul>
-          <li>Addressing errata found in previous versions of the Verifiable Credentials Data Model</li>
-          <li>Data models for credentials, presentations, and proofs</li>
-          <li>Registries for the data models</li>
+          <li>Addressing errata, ambiguities, and interoperability problems found in previous versions of the Verifiable Credentials Data Model</li>
+          <li>A data model for Verifiable Credentials, inclusive of:</li>
+            <ul>
+                <li>credentials and verifiable credentials</li>
+                <li>presentations and verifiable presentations</li>
+                <li>requests for or submissions of verifiable credentials or verifiable presentations</li>
+            </ul>
+          <li>Registries for the data model</li>
           <li>Algorithms for the expression and verification of proofs that use existing cryptographic primitives</li>
-          <li>Refining multilingual support in data models</li>
+          <li>Refining multilingual support in the data model</li>
         </ul>
+	<p>
+	  It is explicitly not a requirement that the new specifications be fully compatible with related past specifications.
+	</p>
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
           <p>The following features are <b>out of scope</b>, and will not be addressed by the Verifiable Credentials Working group:</p>
@@ -159,7 +182,7 @@ The <b>scope</b> of the Verifiable Credentials Working Group is:
             <ul class="out-of-scope">
               <li>The mandate of any specific style of supporting infrastructure (such as a DLT) for a verifiable credentials ecosystem</li>
               <li>The specification of new cryptographic primitives</li>
-              <li>The specification of APIs or protocols (although implications for APIs and protocols of data model and data integrity choices made MAY be discussed)</li>
+              <li>The normative specification of APIs or protocols</li>
             </ul>
         </section>
 
@@ -191,7 +214,7 @@ serializations of that data model. It will replace the current
               </p>
 
               <p class="draft-status"><b>Draft state:</b> <a href="https://w3c.github.io/vc-data-model/">Editor's Draft</a> </p>
-              <p class="milestone"><b>Expected completion:</b> Q4 2023</p>
+              <p class="milestone"><b>Expected completion:</b> <span class=todo>WG-START+24 months</span></p>
               <dl>
                 <dt>
                   <p>
@@ -213,30 +236,23 @@ Exclusion period <b>began</b> 11 November 2021; Exclusion period <b>ended</b> 08
             <dt id="data-integrity-1" class="spec">Verifiable Credential Data Integrity 1.0</dt>
             <dd>
               <p>
-This specification defines how to express proofs of integrity, such as digital
-signatures or proofs of existence, for bounded documents, such as verifiable
-credentials. Concrete serializations will be provided based on <a
-href="https://w3c.github.io/vc-data-model/#json-web-token">VC-JWT</a>, the <a
-href="https://w3c-ccg.github.io/lds-ed25519-2020/">Ed25519 Cryptosuite</a>, and
-the <a href="https://w3c-ccg.github.io/lds-ecdsa-secp256k1-2019/">Secp256k1
-Cryptosuite</a>. Concrete serializations based on the <a
-href="https://w3c-ccg.github.io/ldp-bbs2020/">BBS+ Cryptosuite</a> might be provided, if an <a
-href="https://identity.foundation/bbs-signature/">IETF BBS+ RFC</a> is published
-in time. Concrete serializations for VC-JWP might be provided, if an <a
-href="https://json-web-proofs.github.io/json-web-proofs/">IETF JWP RFC</a> is
-published in time. The final output specifications might not map directly to
-the list of input drafts. Other output serializations covering cryptographic
-primitives published in IETF RFCs not mentioned in this paragraph might be
-produced.
+This specification defines how to express proofs of integrity for verifiable
+credentials using a number of concrete serializations for each of the defined
+syntaxes. The specific set of concrete serializations included will be
+determined by the Working Group.
               </p>
+              <p class="draft-status"><b>Draft state:</b> No Draft </p>
 
-              <p class="draft-status"><b>Draft state:</b>
+              <p class="input-documents"><b>Input documents:</b></p>
+                <p>(the following are a non-exhaustive selection of expected input documents)</p>
                 <a href="https://w3c-ccg.github.io/data-integrity-spec/">Data Integrity</a>,
                 <a href="https://w3c.github.io/vc-data-model/#json-web-token">VC-JWT</a>,
                 <a href="https://w3c-ccg.github.io/lds-ed25519-2020/">Ed25519 Cryptosuite</a>,
+                <a href="https://json-web-proofs.github.io/json-web-proofs/">IETF JWP RFC</a>
                 <a href="https://w3c-ccg.github.io/lds-ecdsa-secp256k1-2019/">Secp256k1 Cryptosuite</a>,
-                <a href="https://w3c-ccg.github.io/ldp-bbs2020/">BBS+ Cryptosuite</a>
-              <p class="milestone"><b>Expected completion:</b> Q4 2023</p>
+                <a href="https://w3c-ccg.github.io/ldp-bbs2020/">BBS+ Cryptosuite</a>,
+                <a href="https://github.com/w3c-ccg/lds-jws2020/">JSON Web Signature 2020</a>              
+              <p class="milestone"><b>Expected completion:</b> <span class=todo>WG-START+24 months</span></p>
             </dd>
           </dl>
 
@@ -247,12 +263,23 @@ produced.
             Other Deliverables
           </h3>
           <p>
-            Other non-normative documents may be created such as:
+Other non-normative documents may be created as time, attention, and resources permit. The following list is a
+non-exhaustive selection of documents the Working Group may wish to produce. The Working
+Group will use its discretion to decide which, if any, to work on, and may publish WG Notes or other documents not
+listed here.
           </p>
           <ul>
             <li>Presentation Request Data Model</li>
             <li>Storage and Sharing of Verifiable Credentials</li>
             <li>Privacy Guidance for Verifiable Credentials</li>
+            <li>A Developer Guide consisting of one or more notes related to general implementation guidance and best practices for working with VCs, including but not limited to:
+              <ul>
+                <li>One or more HTTP protocol definitions for Verifiable Credential Exchange (such as the <a href="https://w3c-ccg.github.io/vc-api/">VC-API</a>)</li>
+                <li>Guidance on Verifiable Credential Exchange over OpenID Connect</li>
+                <li>Verifiable Credential Exchange over [GNAP](https://datatracker.ietf.org/doc/html/draft-ietf-gnap-core-protocol)</li>
+                <li>Other protocols as time, attention, and resources permit.</li>
+              </ul>
+            </li>
             <li>Guidance to enhance verifiable credential interoperability:
               <ul>
                 <li>VC Extension Vocabularies (e.g., ISO 18013-5 Mobile Driver's License)</li>
@@ -267,10 +294,10 @@ produced.
               <li>VC JSON Web Tokens</li>
             </ul>
             </li>
-            <li>Extensions for binding multilingual strings to <a href="https://www.gnu.org/software/gettext/" title="GNU gettext">GNU gettext</a>-like localization files</li>
+            <li>Extensions for binding multilingual resources for localized user interfaces.</li>
           </ul>
           <p>
-The Working Group may also update Notes published under previous charters.
+            The Working Group may also update Notes published under previous charters.
           </p>
         </section>
 
@@ -288,31 +315,23 @@ The Working Group may also update Notes published under previous charters.
         </section>
       </section>
 
-	<section id="success-criteria">
-	  <h2>Success Criteria</h2>
-    <p>
-In order to advance to
-<a href="https://www.w3.org/Consortium/Process//#RecsPR" title="Proposed Recommendation">
-Proposed Recommendation</a>, each normative specification will fulfill the
-<a href="http://www.w3.org/Consortium/Process/#implementation-experience">
-implementation experience required by the W3C Process</a> as follows:
-    </p>
-    <ul>
-      <li>
-The Working Group will seek evidence of independent interoperable uses from at
-least two independent implementations for each feature defined in the
-specification.
-      </li>
-      <li>
-The group will there are sections in the specifications detailing any known
-security or privacy implications for implementers, Web authors, and end users.
-      </li>
-      <li>
-The group will maintain and advance test suites enabling interoperability
-testing for the specifications.
-      </li>
-    </ul>
-	</section>
+      <section id="success-criteria">
+        <h2>Success Criteria</h2>
+
+        <p>
+          In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, 
+          each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at 
+          least two independent implementations</a> of every feature defined in the specification.
+        </p>
+
+        <p>
+          Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.
+        </p>
+
+        <p>
+          There should be testing plans for each specification, starting from the earliest drafts.
+        </p>
+      </section>
 
       <section id="coordination">
         <h2>Coordination</h2>
@@ -372,6 +391,10 @@ testing for the specifications.
                 <dt><a href="https://www.hyperledger.org/use/aries"> Hyperledger Aries</a></dt>
                 <dd>
                     To coordinate on broad horizontal reviews and implementations related to the specifications developed by the Working Group.
+                </dd>
+                <dt><a href="https://www.aclu.org/">The American Civil Liberties Union</a> </dt>
+                <dd>
+                    To coordinate on ensuring that the deliverables of the Working Group are a net positive for civil liberties.
                 </dd>
                 <dt><a href="https://identity.foundation/interop/"> Decentralized Identity Foundation Interoperability Working Group </a> </dt>
                 <dd>
@@ -433,19 +456,19 @@ testing for the specifications.
           Most Verifiable Credentials Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
-This group primarily conducts its technical work on the public mailing list
-<a id="public-name" href="mailto:public-vc-wg@w3.org">public-vc-wg@w3.org</a>
-(<a href="https://lists.w3.org/Archives/Public/public-vc-wg/">archive</a>) or on
-<a id="public-github" href="https://github.com/w3c/verifiable-credentials">GitHub issues</a>
-(and specification-specific GitHub repositories and issue trackers). The public
-is invited to review, discuss and contribute to this work.
+          This group primarily conducts its technical work on the public mailing list
+          <a id="public-name" href="mailto:public-vc-wg@w3.org">public-vc-wg@w3.org</a>
+          (<a href="https://lists.w3.org/Archives/Public/public-vc-wg/">archive</a>) or on
+          <a id="public-github" href="https://github.com/w3c/verifiable-credentials">GitHub issues</a>
+          (and specification-specific GitHub repositories and issue trackers). The public
+          is invited to review, discuss and contribute to this work.
         </p>
         <p>
           The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
         </p>
         <p>
-The group will publish minutes for each teleconference at
-<a  href="https://www.w3.org/2017/vc/WG/Meetings/Minutes/">https://www.w3.org/2017/vc/WG/Meetings/Minutes/</a>.
+          The group will publish minutes for each teleconference on the
+          <a  href="https://www.w3.org/2017/vc/WG/Meetings/Minutes/">Group's home page</a>.
         </p>
       </section>
 
@@ -471,7 +494,7 @@ The group will publish minutes for each teleconference at
           All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
         </p>
         <p>
-          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 3.4, Votes)</a> and includes no voting procedures beyond what the Process Document requires.
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
         </p>
       </section>
 
@@ -497,88 +520,145 @@ The group will publish minutes for each teleconference at
       </section>
 
 
-<!--
+
       <section id="about">
         <h2>
           About this Charter
         </h2>
         <p>
-          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#WG-and-IG">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
 
         <section id="history">
           <h3>
             Charter History
           </h3>
-          <p class="issue"><b>Note:</b>Display this table and update it when appropriate. Requirements for charter extension history are documented in the <a href="https://www.w3.org/Guide/process/charter.html#extension">Charter Guidebook (section 4)</a>.</p>
 
-          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 5.2.3)</a>:</p>
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
+ 
           <table class="history">
             <tbody>
               <tr>
+                <th>Charter Period</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Changes</th>
+              </tr>
+
+              <tr>
+                <th><a href="https://www.w3.org/2017/vc/WG/charter.html">Initial Charter</a></th>
+                <td>14 April 2017</td>
+                <td>31 March 2019</td>
+                <td>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Update</th>
+                <td></td>
+                <td></td>
+                <td>2018-08-01 (plh): Updated Chairs and Team Contacts</td>
+              </tr>
+
+              <tr>
+                <th>Update</th>
+                <td></td>
+                <td></td>
+	              <td>2018-09-12 (coralie): Updated Chairs</td>
+              </tr>
+
+              <tr>
+                <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2019JanMar/0051.html">Charter Extension</a></th>
+                <td>1 April 2019</td>
+                <td>30 September 2019</td>
+                <td>2019-03-29 (kaz): Charter period extended till 30 September 2019</td>
+              </tr>
+
+              <tr>
                 <th>
-                  Charter Period
+                  Proposed
                 </th>
-                <th>
-                  Start Date
-                </th>
-                <th>
-                  End Date
-                </th>
-                <th>
-                  Changes
-                </th>
+                <td>
+                  15 November 2019
+                </td>
+                <td>
+                  30 December 2021
+                </td>
+                <td>
+                  <p>(plh): AC vote for maintenance mode charter</p>
+                </td>
               </tr>
               <tr>
                 <th>
-                  <a class="todo" href="">Initial Charter</a>
+                  <a href="https://www.w3.org/2020/01/vc-wg-charter.html">Initial charter for maintenance mode WG</a>
                 </th>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  20 January 2020
                 </td>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  30 December 2021
                 </td>
                 <td>
-                  <i class="todo">none</i>
+                  <p>2020-01-10 (ivan): The Group is in maintenance mode (AC Vote ended) </p>
                 </td>
               </tr>
               <tr>
                 <th>
-                  <a class="todo" href="">Charter Extension</a>
+                  Update
                 </th>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+
                 </td>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+
                 </td>
                 <td>
-                  <i class="todo">none</i>
+                  <p>2020-06-15 (ivan): <a href='https://lists.w3.org/Archives/Member/w3c-ac-members/2020AprJun/0053.html'>Removed Matt Stone as a co-chair</a>.</p>
                 </td>
               </tr>
               <tr>
+                <th>Update</th>
+                <td></td>
+                <td></td>
+                <td>
+                  <p><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2020JulSep/0013.html">2020-07-24</a> (xueyuan): Daniel Burnett re-appointed as group Chair.</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Rechartered</th>
+                <td>15 December 2020</td>
+                <td>30 December 2021</td>
+                <td>New Patent Policy</td>
+              </tr>
+              <tr>
+                <th><a href="https://lists.w3.org/Archives/Member/w3c-ac-members/2021OctDec/0052.html">Charter Extension</a></th>
+                <td>30 December 2021</td>
+                <td>30 April 2022</td>
+                <td>2021-12-20: Charter extended till 30 April 2022</td>
+              </tr>
+              <tr>
                 <th>
-                  <a class="todo" href="">Rechartered</a>
+                  New charter work started
                 </th>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  20 December 2021
                 </td>
                 <td>
                   <i class="todo">[dd monthname yyyy]</i>
                 </td>
                 <td>
-                  <p class="todo">[description of change to charter, with link to new deliverable item in charter] <b>Note:</b> use the class <code>new</code> for all new deliverables, for ease of recognition.</p>
+                  2021-12-20 (ivan): Proposed work on an update of the VC Data model, and a new deliverable on VC Data Integrity. See the
+                  <a class="todo" href="https://lists.w3.org/Archives/Public/public-new-work/2021Dec/0008.html">Advanced Notice</a>, and the <a href="https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fraw.githack.com%2Fw3c%2Fvc-wg-charter%2Fe309d2a94beca018b2bc75bbaf4b7f3f8f212705%2Findex.html&doc2=https%3A%2F%2Fw3c.github.io%2Fvc-wg-charter%2F">changes on the proposed charter</a> in the advanced notice period.
                 </td>
               </tr>
             </tbody>
           </table>
         </section>
 
+<!--
         <section id="changelog">
           <h3>Change log</h3>
--->
           <!-- Use this section for changes _after_ the charter was approved by the Director. -->
 <!--          <p>Changes to this document are documented in this section.</p>
 -->
@@ -601,7 +681,7 @@ The group will publish minutes for each teleconference at
       </address>
 
       <p class="copyright">
-        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2021
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2022
         <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
         (
         <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
