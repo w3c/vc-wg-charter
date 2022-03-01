@@ -180,7 +180,7 @@ The <b>scope</b> of the Verifiable Credentials Working Group is:
           <p>The following features are <b>out of scope</b>, and will not be addressed by the Verifiable Credentials Working group:</p>
 
             <ul class="out-of-scope">
-              <li>The mandate of any specific style of supporting infrastructure, such as a Distributed Ledger (DLT), for a verifiable credentials ecosystem</li>
+              <li>The mandate of any specific style of supporting infrastructure (such as a DLT) for a verifiable credentials ecosystem</li>
               <li>The specification of new cryptographic primitives</li>
               <li>The normative specification of APIs or protocols</li>
             </ul>
@@ -292,7 +292,7 @@ A cryptographic digital signature suite supporting selective disclosure.
               </td>
             </tr>
             <tr>
-              <td><a href="https://json-web-proofs.github.io/json-web-proofs/">JSON Web Proof (JWP)</a></td>
+              <td><a href="https://json-web-proofs.github.io/json-web-proofs/">VC-JWP</a></td>
               <td>
 A cryptographic container format for expressing JWT-like proofs for selective
 disclosure and other modern cryptographic schemes.
@@ -312,14 +312,16 @@ Group will use its discretion to decide which, if any, to work on, and may publi
 listed here.
           </p>
           <ul>
+            <li>Test suites for all normative deliverables</li>
             <li>Presentation Request Data Model</li>
             <li>Storage and Sharing of Verifiable Credentials</li>
             <li>Privacy Guidance for Verifiable Credentials</li>
+            <li>Extensions for binding multilingual resources for localized user interfaces.</li>
             <li>A Developer Guide consisting of one or more notes related to general implementation guidance and best practices for working with VCs, including but not limited to:
               <ul>
                 <li>One or more HTTP protocol definitions for Verifiable Credential Exchange (such as the <a href="https://w3c-ccg.github.io/vc-api/">VC-API</a>)</li>
-                <li>Guidance on Verifiable Credential Exchange over OpenID Connect</li>
-                <li>Verifiable Credential Exchange over [Grant Negotiation and Authorization Protocol (GNAP)](https://datatracker.ietf.org/doc/html/draft-ietf-gnap-core-protocol)</li>
+                <li>Guidance on Verifiable Credential Exchange over <a href="https://openid.net/specs/openid-connect-core-1_0.html">OpenID Connect</a></li>
+                <li>Verifiable Credential Exchange over <a href="https://datatracker.ietf.org/doc/html/draft-ietf-gnap-core-protocol">GNAP</li>
                 <li>Other protocols as time, attention, and resources permit.</li>
               </ul>
             </li>
@@ -330,14 +332,6 @@ listed here.
                 <li>Test Suites</li>
               </ul>
             </li>
-            <li>Test suites for verifiable credential proof types:
-            <ul>
-              <li>VC Data Integrity - Ed25519</li>
-              <li>VC Data Integrity - BBS+</li>
-              <li>VC JSON Web Tokens</li>
-            </ul>
-            </li>
-            <li>Extensions for binding multilingual resources for localized user interfaces.</li>
           </ul>
           <p>
             The Working Group may also update Notes published under previous charters.
