@@ -102,7 +102,7 @@ seeking to better understand some the terminology used in this charter e.g., cre
             <td>
               See the <a href="https://www.w3.org/groups/wg/vc/charters">group status page</a> and <a href="#history">detailed change history</a>.</i>
             </td>
-          </tr>	
+          </tr>
           <tr id="Duration">
             <th>
               Start date
@@ -236,26 +236,69 @@ Exclusion period <b>began</b> 11 November 2021; Exclusion period <b>ended</b> 08
             <dt id="data-integrity-1" class="spec">Verifiable Credential Data Integrity (VCDI) 1.0</dt>
             <dd>
               <p>
-This specification defines how to express proofs of integrity for verifiable
-credentials using a number of concrete serializations for each of the defined
-syntaxes. The specific set of concrete serializations included will be
-determined by the Working Group.
+This family of specifications consists of documents that each define how to
+express proofs of integrity for verifiable credentials using a number of
+concrete serializations for each of the defined syntaxes. The specific set of
+concrete serializations included will be determined by the Working Group. The
+following are a non-exhaustive selection of expected input documents:
               </p>
-              <p class="draft-status"><b>Draft state:</b> No Draft </p>
-
-              <p class="input-documents"><b>Input documents:</b></p>
-                <p>(the following are a non-exhaustive selection of expected input documents)</p>
-                <a href="https://w3c-ccg.github.io/data-integrity-spec/">Data Integrity</a>,
+              <p class="input-documents"><b>Container Formats:</b>
                 <a href="https://w3c.github.io/vc-data-model/#json-web-token">VC-JSON Web Token (JWT)</a>,
-                <a href="https://w3c-ccg.github.io/lds-ed25519-2020/">Ed25519 Cryptosuite</a>,
-                <a href="https://json-web-proofs.github.io/json-web-proofs/">IETF JSON Web Proof (JWP) RFC</a>
-                <a href="https://w3c-ccg.github.io/lds-ecdsa-secp256k1-2019/">Secp256k1 Cryptosuite</a>,
-                <a href="https://w3c-ccg.github.io/ldp-bbs2020/">BBS+ Cryptosuite</a>,
-                <a href="https://github.com/w3c-ccg/lds-jws2020/">JSON Web Signature 2020</a>              
+                <a href="https://w3c-ccg.github.io/data-integrity-spec/">Data Integrity</a>
+              </p>
+              <p class="input-documents"><b>Cryptosuites:</b>
+                <a href="https://github.com/w3c-ccg/lds-jws2020/">JSON Web Signature 2020</a>,
+                <a href="https://w3c-ccg.github.io/lds-ed25519-2020/">EdDSA</a>,
+                <a href="https://w3c-ccg.github.io/di-ecdsa-secpr1-2019/">NIST ECDSA</a>,
+                <a href="https://w3c-ccg.github.io/lds-ecdsa-secp256k1-2019/">Koblitz ECDSA</a>
+              </p>
               <p class="milestone"><b>Expected completion:</b> <span class=todo>WG-START+24 months</span></p>
             </dd>
           </dl>
 
+        </section>
+
+        <section id="normative">
+          <h3>
+            Conditional Normative Specifications
+          </h3>
+          <p>
+Depending on progress in the
+<a href="https://www.w3.org/community/credentials/">W3C Credentials Community Group</a>
+and the <a href="https://www.ietf.org/">IETF</a>, the Working Group may also
+produce W3C Recommendations based on the following documents:
+          </p>
+
+          <table>
+            <tr>
+              <th>Specification</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+<a href="https://or13.github.io/lds-pgp2021/">PGP&nbsp;Cryptosuite</a>
+              </td>
+              <td>
+A cryptographic digital signature suite that utilizes Pretty Good Privacy [<a
+href="https://datatracker.ietf.org/doc/html/rfc4880">RFC4880</a>].
+              </td>
+            </tr>
+            <tr>
+              <td>
+<a href="https://w3c-ccg.github.io/ldp-bbs2020/">BBS+&nbsp;Cryptosuite</a>
+              </td>
+              <td>
+A cryptographic digital signature suite supporting selective disclosure.
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://json-web-proofs.github.io/json-web-proofs/">JSON Web Proof (JWP)</a></td>
+              <td>
+A cryptographic container format for expressing JWT-like proofs for selective
+disclosure and other modern cryptographic schemes.
+              </td>
+            </tr>
+          </table>
         </section>
 
         <section id="ig-other-deliverables">
@@ -319,8 +362,8 @@ listed here.
         <h2>Success Criteria</h2>
 
         <p>
-          In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, 
-          each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at 
+          In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>,
+          each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at
           least two independent implementations</a> of every feature defined in the specification.
         </p>
 
@@ -536,7 +579,7 @@ listed here.
 
           <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
- 
+
           <table class="history">
             <tbody>
               <tr>
