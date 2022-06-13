@@ -1,3 +1,5 @@
+The charter has been approved and announced on 2022-06-13. This repository is now archived.
+
 
 # Verifiable Credentials' WG new charter
 
