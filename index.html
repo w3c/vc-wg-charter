@@ -71,7 +71,7 @@
 
 
     <main>
-      <h1 id="title">Verifiable Credentials Working Group Charter</h1>
+      <h1 id="title">[PROPOSED] Verifiable Credentials Working Group Charter</h1>
       <!-- delete PROPOSED after AC review completed -->
 
       <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/2017/vc/WG/">Verifiable Credentials Working Group</a> is to make expressing, exchanging, and verifying credentials easier and more secure on the web.</p>
@@ -103,7 +103,7 @@
               Start date
             </th>
             <td>
-              13 June 2022
+              01 July 2024
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -111,7 +111,7 @@
               End date
             </th>
             <td>
-              30 June 2024
+              30 June 2026
             </td>
           </tr>
           <tr>
@@ -166,9 +166,12 @@
           <li>Algorithms for the expression and verification of proofs that use existing cryptographic primitives</li>
           <li>Refining multilingual support in the data model</li>
         </ul>
-	<p>
-	  It is explicitly not a requirement that the new specifications be fully compatible with related past specifications.
-	</p>
+        <p>
+          It is explicitly not a requirement that the new specifications be fully compatible with related past specifications.
+        </p>
+        <p>
+          Once all the planned Recommendations have been published, the Working Group will continue in maintenance mode to handle errata. No new Recommendations are planned. <a href="https://www.w3.org/2023/Process-20231103/#class-4">Class 4 changes</a> for Recommendations published by the Working Group are <strong>out of scope</strong>, <em><strong>except</strong></em> if serious security issues come to the fore that require changes in a Recommendation.
+        </p>
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
           <p>The following features are <b>out of scope</b>, and will not be addressed by the Verifiable Credentials Working group:</p>
@@ -202,55 +205,250 @@
             <dt id="verifiable-credentials-data-model-2" class="spec">Verifiable Credentials Data Model (VCDM) 2.0</dt>
             <dd>
               <p>
-                This specification defines the Verifiable Credentials Data Model 2.0 along with
-                serializations of that data model. It will replace the current
-                <a href="https://www.w3.org/TR/vc-data-model/">Verifiable Credentials Data Model 1.1 Recommendation</a>.
+                This specification defines the Verifiable Credentials Data Model 2.0 along with serializations of that
+                data model. It will replace the current <a href="https://www.w3.org/TR/vc-data-model/">Verifiable
+                  Credentials Data Model 1.1 Recommendation</a>.
               </p>
-
-              <p class="draft-status"><b>Draft state:</b> <a href="https://w3c.github.io/vc-data-model/">Editor's Draft</a> </p>
-              <p class="milestone"><b>Expected completion:</b> 30 June 2024</p>
-              <dl>
-                <dt>
-                  <p>
-                      <b>Adopted Draft:</b> <a href='https://w3c.github.io/vc-data-model/'>Verifiable Credentials Data Model 1.1</a>
-                  </p>
-                  <p>
-                      <b>Exclusion Draft:</b>
-                      <a href='https://www.w3.org/TR/2021/REC-vc-data-model-20211109/'>Verifiable Credentials Data Model 1.1</a>
-                      Exclusion period <b>began</b> 11 November 2021; Exclusion period <b>ended</b> 08 January 2022.
-                  </p>
-                  <p>
-                      <b>Other Charter:</b> <a href="https://www.w3.org/2020/12/verifiable-credentials-wg-charter.html"> https://www.w3.org/2020/12/verifiable-credentials-wg-charter.html</a>
-                  </p>
-                </dd>
-              </dl>
+        
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/vc-data-model-2.0/">Candidate
+                  Recommendation</a></p>
+        
+              <p class="milestone"><b>Expected completion:</b> 2025-01-31</p>
+        
+              <p>
+                <b>Adopted Draft:</b> <a href='https://www.w3.org/TR/vc-data-model-2.0/'>Verifiable Credentials Data
+                  Model v2.0</a>
+              </p>
+        
+              <p>
+                <b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2024/CR-vc-data-model-2.0-20240201/'>Verifiable Credentials Data Model
+                  2.0 (CR Snapshot)</a>
+                Exclusion period <b>began</b> 2024-02-01; Exclusion period <b>ended</b> 2024-04-01.
+              </p>
+        
+              <p>
+                <b>Exclusion Draft Charter:</b> https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html</b>
+              </p>
             </dd>
           </dl>
           <dl>
-            <dt id="data-integrity-1" class="spec">Securing Verifiable Credentials (SVC) 1.0</dt>
+            <dt id="data-integrity-1" class="spec">Verifiable Credential Data Integrity 1.0</dt>
             <dd>
               <p>
-                  This family of specifications consists of documents that each define how to
-                  express and associate proofs of integrity for Verifiable Credentials and
-                  concrete serializations for each of the defined syntaxes. The Working Group
-                  would welcome the usage of these techniques for data in general, but
-                  its scope will be to solve Verifiable Credentials use cases. The specific set of
-                  concrete serializations included will be determined by the Working Group. The
-                  following are a non-exhaustive selection of expected input documents:
+                This specification is a general framework to associate proofs of integrity for Verifiable Credentials
+                and concrete serializations for each of the defined syntaxes.
+                The Working Group would welcome the usage of these techniques for data in general, but
+                its scope will be to solve Verifiable Credentials use cases. The specific set of
+                concrete serializations and cryptosuites appear as separate
+                specification, all part of the same family of specifications.
               </p>
-              <p class="input-documents"><b>Cryptosuites for <a href="https://w3c.github.io/vc-data-model/#json-web-token">VC-JSON Web Token (JWT)</a>:</b>
-                <a href="https://www.iana.org/assignments/jose/jose.xhtml#web-signature-encryption-algorithms">IANA JOSE Algorithms Registry</a>
+        
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/vc-data-integrity/">Candidate
+                  Recommendation</a></p>
+        
+              <p class="milestone"><b>Expected completion:</b> 2025-01-31</p>
+        
+              <p>
+                <b>Adopted Draft:</b> <a href='https://www.w3.org/TR/vc-data-integrity/'>Verifiable Credential Data Integrity
+                  1.0</a>
               </p>
-              <p class="input-documents"><b>Cryptosuites for <a href="https://w3c-ccg.github.io/data-integrity-spec/">Data Integrity</a>:</b>
-                <a href="https://github.com/w3c-ccg/lds-jws2020/">JSON Web Signature 2020</a>,
-                <a href="https://w3c-ccg.github.io/lds-ed25519-2020/">EdDSA</a>,
-                <a href="https://w3c-ccg.github.io/di-ecdsa-secpr1-2019/">NIST ECDSA</a>,
-                <a href="https://w3c-ccg.github.io/lds-ecdsa-secp256k1-2019/">Koblitz ECDSA</a>
+        
+              <p>
+                <b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2023/CR-vc-data-integrity-20231121/'>Verifiable Credential Data Integrity 1.0 (CR
+                  Snapshot)</a>
+                Exclusion period <b>began</b> 2023-11-21; Exclusion period <b>ended</b> 2024-01-20.
               </p>
-              <p class="milestone"><b>Expected completion:</b>30 June 2024</p>
+        
+              <p>
+                <b>Exclusion Draft Charter:</b> https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html</b>
+              </p>
             </dd>
           </dl>
-
+        
+          <dl>
+            <dt id="json-schema" class="spec">Verifiable Credentials JSON Schema Specification</dt>
+            <dd>
+              <p>
+                This specification provides a mechanism to make use of a Credential Schema in Verifiable Credential,
+                leveraging the existing Data Schemas concept.
+              </p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/vc-json-schema/">Candidate
+                  Recommendation</a></p>
+        
+              <p class="milestone"><b>Expected completion:</b> 2025-01-31</p>
+        
+              <p>
+                <b>Adopted Draft:</b> <a href='https://www.w3.org/TR/vc-json-schema/'>Verifiable Credentials JSON Schema
+                  Specification</a>
+              </p>
+        
+              <p>
+                <b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2023/CR-vc-json-schema-20231121/'>Verifiable Credentials JSON Schema
+                  Specification (CR Snapshot)</a>
+                Exclusion period <b>began</b> 2023-11-21; Exclusion period <b>ended</b> 2024-01-20.
+              </p>
+        
+              <p>
+                <b>Exclusion Draft Charter:</b> https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html</b>
+              </p>
+            </dd>
+          </dl>
+        
+          <dl>
+            <dt id="ecdsa" class="spec">Data Integrity ECDSA Cryptosuites v1.0</dt>
+            <dd>
+              <p>
+                This specification describes a Data Integrity Cryptosuite for use when generating a digital signature
+                using the Elliptic Curve Digital Signature Algorithm (ECDSA).
+              </p>
+        
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/vc-di-ecdsa/">Candidate
+                  Recommendation</a></p>
+        
+              <p class="milestone"><b>Expected completion:</b> 2025-01-31</p>
+        
+              <p>
+                <b>Adopted Draft:</b> <a href='https://www.w3.org/TR/vc-di-ecdsa/'>Data Integrity ECDSA Cryptosuites v1.0</a>
+              </p>
+        
+              <p>
+                <b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2023/CR-vc-di-ecdsa-20231121/'>Data Integrity ECDSA Cryptosuites v1.0 (CR
+                  Snapshot)</a>
+                Exclusion period <b>began</b> 2023-11-21; Exclusion period <b>ended</b> 2024-01-20.
+              </p>
+        
+              <p>
+                <b>Exclusion Draft Charter:</b> https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html</b>
+              </p>
+            </dd>
+          </dl>
+        
+          <dl>
+            <dt id="eddsa" class="spec">Data Integrity EdDSA Cryptosuites v1.0</dt>
+            <dd>
+              <p>
+                This specification describes a Data Integrity cryptographic suite for use when creating or verifying a digital
+                signature
+                using the twisted Edwards Curve Digital Signature Algorithm (EdDSA) and Curve25519 (ed25519).
+              </p>
+        
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/vc-di-eddsa/">Candidate
+                  Recommendation</a></p>
+        
+              <p class="milestone"><b>Expected completion:</b> 2025-01-31</p>
+        
+              <p>
+                <b>Adopted Draft:</b> <a href='https://www.w3.org/TR/vc-di-eddsa/'>Data Integrity EdDSA Cryptosuites
+                  v1.0</a>
+              </p>
+        
+              <p>
+                <b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2023/CR-vc-di-eddsa-20231121/'>Data Integrity EdDSA Cryptosuites v1.0 (CR
+                  Snapshot)</a>
+                Exclusion period <b>began</b> 2023-11-21; Exclusion period <b>ended</b> 2024-01-20.
+              </p>
+        
+              <p>
+                <b>Exclusion Draft Charter:</b> https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html</b>
+              </p>
+            </dd>
+          </dl>
+        
+          <dl>
+            <dt id="bbs" class="spec">Data Integrity BBS Cryptosuites v1.0</dt>
+            <dd>
+              <p>
+                This specification describes a Data Integrity Cryptosuite for use when generating digital signatures
+                using the BBS signature scheme. The Signature Suite utilizes BBS signatures to provide selective
+                disclosure and unlinkable derived proofs.
+              </p>
+        
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/vc-di-bbs/">Working Draft</a> </p>
+        
+              <p class="milestone"><b>Expected completion:</b> 2025-01-31</p>
+        
+              <p>
+                <b>Adopted Draft:</b> <a href='https://www.w3.org/TR/vc-di-bbs/'>Data Integrity BBS Cryptosuites
+                  v1.0</a>
+              </p>
+        
+              <p>
+                <b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2023/WD-vc-di-bbs-20230518/'>BBS Cryptosuite v2023 (First Public Working
+                  Draft)</a>
+                Exclusion period <b>began</b> 2023-05-18; Exclusion period <b>ended</b> 2023-10-15.
+              </p>
+        
+              <p>
+                <b>Exclusion Draft Charter:</b> https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html</b>
+              </p>
+            </dd>
+          </dl>
+        
+          <dl>
+            <dt id="jose-cose" class="spec">Securing Verifiable Credentials using JOSE and COSE</dt>
+            <dd>
+              <p>
+                This specification defines how to secure credentials and presentations conforming to the Verifiable Credential
+                data model with JSON Object Signing and Encryption (JOSE), Selective Disclosure for JWTs, and
+                CBOR Object Signing and Encryption (COSE).
+              </p>
+              <p class="draft-status"><b>Draft state:</b> <a href="https://www.w3.org/TR/vc-jwt/">Working Draft</a></p>
+        
+              <p class="milestone"><b>Expected completion:</b> 2025-01-31</p>
+        
+              <p>
+                <b>Adopted Draft:</b> <a href='https://www.w3.org/TR/vc-jwt/'>Securing Verifiable Credentials using JOSE and
+                  COSE</a>
+              </p>
+        
+              <p>
+                <b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2023/WD-vc-jwt-20230427/'>Securing Verifiable Credentials using JSON Web Tokens
+                  (First Public Working Draft)</a>
+                Exclusion period <b>began</b> 2023-04-27; Exclusion period <b>ended</b> 2023-09-24.
+              </p>
+        
+              <p>
+                <b>Exclusion Draft Charter:</b> https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html</b>
+              </p>
+            </dd>
+          </dl>
+        
+          <dl>
+            <dt id="bitstring" class="spec">Bitstring Status List v1.0</dt>
+            <dd>
+              <p>
+                This specification describes a privacy-preserving, space-efficient, and high-performance mechanism for
+                publishing status information such as suspension or revocation of Verifiable Credentials through use of
+                bitstrings.
+              </p>
+        
+              <p class="draft-status"> <b>Draft state:</b> <a href="https://www.w3.org/TR/vc-bitstring-status-list/">Working
+                  Draft</a></p>
+        
+              <p class="milestone"><b>Expected completion:</b> 2025-01-31</p>
+        
+              <p>
+                <b>Adopted Draft:</b> <a href='https://www.w3.org/TR/vc-bitstring-status-list/'>Bitstring Status List v1.0</a>
+              </p>
+        
+              <p>
+                <b>Exclusion Draft:</b>
+                <a href='https://www.w3.org/TR/2023/WD-vc-status-list-20230427/'>Verifiable Credentials Status List v2021 (First
+                  Public Working Draft)</a>
+                Exclusion period <b>began</b> 2023-04-27; Exclusion period <b>ended</b> 2023-09-24.
+              </p>
+              <p>
+                <b>Exclusion Draft Charter:</b> https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html</b>
+              </p>
+            </dd>
+          </dl>
         </section>
 
         <section id="conditional-normative">
@@ -281,17 +479,6 @@
               </td>
               <td>
                   <a href="https://or13.github.io/lds-pgp2021/">PGP&nbsp;Cryptosuite</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                  BBS+&nbsp;Cryptosuite
-              </td>
-              <td>
-                  A cryptographic digital signature suite supporting selective disclosure.
-              </td>
-              <td>
-                  <a href="https://w3c-ccg.github.io/ldp-bbs2020/">BBS+&nbsp;Cryptosuite</a>
               </td>
             </tr>
             <tr>
@@ -385,13 +572,10 @@
         <section id="timeline">
           <h3>Timeline</h3>
           <ul>
-            <li>June 2022: First teleconference</li>
-            <li>September 2022: FPWD for VCDM 2.0</li>
-            <li>September 2022: First face-to-face meeting</li>
-            <li>January 2023: FPWD for SVC 1.0</li>
-            <li>September 2023: CR for VCDM 2.0</li>
-            <li>January 2024: CR for SVC 1.0</li>
-            <li>June 2024: REC for all standards-track documents</li>
+            <li>July 2024: First teleconference</li>
+            <li>November 2024: Proposed Recommendation for all normative Deliverables</li>
+            <li>January 2025: REC for all standards-track documents</li>
+            <li>February 2025: Working Group begins to operate in maintenance mode</li>
           </ul>
         </section>
       </section>
@@ -406,13 +590,14 @@
         </p>
 
         <p>
+          There should be testing plans for each specification, starting from the earliest drafts.
+        </p>
+        
+        <p>
           Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.
         </p>
 
-        <p>
-          There should be testing plans for each specification, starting from the earliest drafts.
-        </p>
-        <p>
+       <p>
           In order to advance to Proposed Recommendation, each normative specification must have an open test suite
           that tests every feature defined in the specification.
           Additionally, two or more implementations should demonstrate interoperability for each feature
@@ -530,7 +715,7 @@
           The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
         </p>
         <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
-          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+          W3C <a href="https://www.w3.org/Consortium/cepc/">Positive Work Environment at W3C: Code of Conduct</a>.</p>
       </section>
 
 
@@ -573,7 +758,7 @@
           Decision Policy
         </h2>
         <p>
-          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 5.2.1 Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
         <p>
            However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
         </p>
@@ -815,6 +1000,20 @@
                 <td>
                   2024-04-01 (Ivan): Brent Zundel is re-appointed as chair of the group.
                 </td>
+                <tr>
+              </tr>
+              <tr>
+                <th>
+                  Working on new charter
+                </th>
+                <td>
+                  27 March 2024
+                </td>
+                <td>
+                </td>
+                <td>
+                  2024-03-27 (Ivan): Work starts for the extension of the previous charter.
+                </td>
               </tr>
             </tbody>
           </table>
@@ -845,7 +1044,7 @@
       </address>
 
       <p class="copyright">
-        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2023
+        <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2024
         <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>.
 
         <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
