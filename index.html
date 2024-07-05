@@ -26,6 +26,7 @@
         background: yellow;
       }
 
+      /*
       ul.out-of-scope > li {
         font-weight: bold;
       }
@@ -33,6 +34,7 @@
       ul.out-of-scope > li > ul > li{
         font-weight: normal;
       }
+      */
 
       .issue {
         background: cornsilk;
@@ -52,6 +54,7 @@
     <header id="header">
       <aside>
         <ul id="navbar">
+          <li><a href="#background">Background</a></li>
           <li><a href="#scope">Scope</a></li>
           <li><a href="#deliverables">Deliverables</a></li>
 		      <li><a href="#success-criteria">Success Criteria</a></li>
@@ -74,14 +77,7 @@
       <h1 id="title">[PROPOSED] Verifiable Credentials Working Group Charter</h1>
       <!-- delete PROPOSED after AC review completed -->
 
-      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/2017/vc/WG/">Verifiable Credentials Working Group</a> is to make expressing, exchanging, and verifying credentials easier and more secure on the web.</p>
-
-      <p class="motivation">
-          Readers that are new to this work should read the <a href="https://www.w3.org/TR/vc-data-model/">latest Verifiable
-          Credentials Data Model</a>. The <a href="https://www.w3.org/TR/vc-data-model/#introduction">Introduction</a> and
-          <a href="https://www.w3.org/TR/vc-data-model/#terminology">Terminology</a> may be particularly helpful to W3C Members
-          seeking to better understand some the terminology used in this charter e.g., Credentials vs. Verifiable Credentials and Presentations vs. Verifiable Presentations.
-      </p>
+      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/2017/vc/WG/">Verifiable Credentials Working Group</a> is to make expressing, exchanging, and verifying credentials easier and more secure on the Web.</p>
 
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/98922/join">Join the Verifiable Credentials Working Group.</a></p>
@@ -143,6 +139,20 @@
         </table>
       </section>
 
+      <!-- MARK: Background -->
+      <section id="background" class="background">
+        <h2>Motivation and Background</h2>
+      <p class="motivation">
+        Readers that are new to this work should read the <a href="https://www.w3.org/TR/vc-data-model-2.0/">latest Verifiable
+          Credentials Data Model</a>. The <a href="https://www.w3.org/TR/vc-data-model-2.0/#introduction">Introduction</a> and
+        <a href="https://www.w3.org/TR/vc-data-model-2.0/#terminology">Terminology</a> may be particularly helpful to W3C
+        Members
+        seeking to better understand some the terminology used in this charter e.g., Credentials vs. Verifiable Credentials
+        and Presentations vs. Verifiable Presentations.
+      </p>
+        <p>T.B.D.</p>
+      </section>
+
       <!-- MARK: Scope -->
       <section id="scope" class="scope">
         <h2>Scope</h2>
@@ -194,7 +204,7 @@
 
         <section id="section-out-of-scope">
           <h3 id="out-of-scope">Out of Scope</h3>
-          <p>The following features are <b>out of scope</b>, and will not be addressed by the Verifiable Credentials Working group:</p>
+          <p>The following features are out of scope, and will not be addressed by this Working group:</p>
 
             <ul class="out-of-scope">
               <li>The mandate of any specific style of supporting infrastructure, such as a Distributed Ledger (DLT), for a Verifiable Credentials ecosystem</li>
@@ -500,66 +510,56 @@
 
         <section id="conditional-normative">
           <h3>
-            Conditional Normative Specifications
+            Tentative Deliverables
           </h3>
+
           <p>
-              Depending on progress in the
-              <a href="https://www.w3.org/community/credentials/">W3C Credentials Community Group</a>,
-              the <a href="https://www.ietf.org/">IETF</a>,
-              and the <a href="https://identity.foundation/">DIF</a>, the Working Group may also
-              produce W3C Recommendations based on the following documents:
+            Depending on the incubation progress, interest from multiple implementers, and the consensus of the Group participants,
+            the Working Group may adopt the following documents as Rec-track specifications:
           </p>
 
-          <table>
-            <tr>
-              <th>Specification</th>
-              <th>Description</th>
-              <th>Input Documents</th>
-            </tr>
-            <tr>
-              <td>
-                  PGP&nbsp;Cryptosuite
-              </td>
-              <td>
-                  A cryptographic digital signature suite that utilizes Pretty Good Privacy [<a
-                  href="https://datatracker.ietf.org/doc/html/rfc4880">RFC4880</a>].
-              </td>
-              <td>
-                  <a href="https://or13.github.io/lds-pgp2021/">PGP&nbsp;Cryptosuite</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                  Verifiable Credential Protection Using JWPs
-              </td>
-              <td>
-                  A cryptographic container format for expressing JWT-like proofs for selective
-                  disclosure and other modern cryptographic schemes.
-              </td>
-              <td>
-                  <a href="https://json-web-proofs.github.io/json-web-proofs/">VC-JSON Web Proof (JWP)</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                  Koblitz ECDSA Recovery Cryptosuite
-              </td>
-              <td>
-                  A cryptographic digital signature suite supporting elliptic curve public key recovery.
-              </td>
-              <td>
-                  <a href="https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/">Secp256k1 Recovery Cryptosuite</a>
-              </td>
-            </tr>
-          </table>
-          <p>
+          <dl>
+            <dt class="spec">PGP Cryptosuite</dt>
+            <dd>
+              <p>A cryptographic digital signature suite that utilizes Pretty Good Privacy [<a
+                href="https://datatracker.ietf.org/doc/html/rfc4880">RFC4880</a>].
+              </p>
+
+              <p class="draft-status">
+                <b>Draft state</b>: <a href="https://or13.github.io/lds-pgp2021/">IETF Drafts</a>
+              </p>
+            </dd>
+            <dt class="spec">Verifiable Credential Protection Using JWPs</dt>
+            <dd>
+              <p>
+                A cryptographic container format for expressing JWT-like proofs for selective disclosure
+                and other modern cryptographic schemes.
+              </p>
+            
+              <p class="draft-status">
+                <b>VC-JSON Web Proof (JWP)</b>: <a href="https://json-web-proofs.github.io/json-web-proofs/">Individual Proposal</a>
+              </p>
+            </dd>
+            <dt class="spec">Koblitz ECDSA Recovery Cryptosuite</dt>
+            <dd>
+              <p>
+                A cryptographic digital signature suite supporting elliptic curve public key recovery.
+              </p>
+            
+              <p class="draft-status">
+                <b>EcdsaSecp256k1RecoverySignature2020</b>: <a href="[EcdsaSecp256k1RecoverySignature2020 | EcdsaSecp256k1RecoverySignature2020](https://identity.foundation/EcdsaSecp256k1RecoverySignature2020/)">Identity Foundation document</a>
+              </p>
+            </dd>
+          </dl>
+
+           <p>
               Other cryptographic suites for
               <a href="https://datatracker.ietf.org/doc/html/rfc8017">NIST RSA</a>,
               <a href="https://datatracker.ietf.org/doc/html/rfc4490">EASC DSA</a>,
               <a href="https://standards.ieee.org/ieee/1363.3/3822/">SM9 IBSA</a>,
               <a href="https://csrc.nist.gov/Projects/post-quantum-cryptography">NIST post-quantum cryptography</a>,
               or other externally standardized cryptographic primitives may be produced under
-              the same conditions as the table above.
+              the same conditions.
           </p>
         </section>
 
@@ -572,7 +572,7 @@
             <a href="https://www.w3.org/2021/Process-20211102/#registries">registries</a>
             including <a href="https://www.w3.org/2021/Process-20211102/#registry-definition">registry definitions</a>
             and <a href="https://www.w3.org/2021/Process-20211102/#registry-table">registry tables</a>
-            to support extension points in the above normative deliverables. Registries for
+            to support extension points in the normative deliverables above. Registries for
             extension points that are mandatory to use, for any of the above normative
             deliverables (for example, Verifiable Credential properties that MUST be included in
             a Verifiable Credential), must have at least one standardized entry.
@@ -584,10 +584,7 @@
             Other Deliverables
           </h3>
           <p>
-            Other non-normative documents may be created as time, attention, and resources permit. The following list is a
-            non-exhaustive selection of documents the Working Group may wish to produce. The Working
-            Group will use its discretion to decide which, if any, to work on, and may publish WG Notes or other documents not
-            listed here.
+            Other non-normative documents may be created such as:
           </p>
           <ul>
             <li>Test suites for all normative deliverables</li>
@@ -629,17 +626,14 @@
         <h2>Success Criteria</h2>
 
         <p>
-          In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>,
-          each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at
-          least two independent implementations</a> of every feature defined in the specification.
+          In order to advance to <a href="https://www.w3.org/policies/process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>,
+          each normative specification is expected to have <a href="https://www.w3.org/policies/process/#implementation-experience">at
+          least two independent interoperable implementations</a> of every feature defined in the specification, where interoperability can be
+          verified by passing open test suites.
         </p>
 
         <p>
           There should be testing plans for each specification, starting from the earliest drafts.
-        </p>
-        
-        <p>
-          Each specification should contain separate sections detailing all known security and privacy implications for implementers, Web authors, and end users.
         </p>
 
        <p>
@@ -649,25 +643,41 @@
           by passing these open test suites, and by showing that these implementations may interoperate with each other. 
           For example Verifiable Credentials produced by implementations must be consumed by other implementations and behave as specified. 
         </p>
+
         <p>
           A feature should be understood as a property or set of properties that are normatively required.
         </p>
+        <p>
+          Each specification should contain separate sections detailing all known security and privacy implications for
+          implementers, Web authors, and end users.
+        </p>
+
+        <p>
+          This Working Group expects to follow the <a href="https://www.w3.org/TR/design-principles/">TAG Web Platform Design Principles</a>.
+        </p>     
       </section>
 
       <!-- MARK: Coordination -->
       <section id="coordination">
         <h2>Coordination</h2>
-        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
-          accessibility, internationalization, performance, privacy, and security with the relevant Working and
-          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
-          Invitation for review must be issued during each major standards-track document transition, including
-          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
-          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
-          each specification.  The Working Group is advised to seek a review at least 3 months before first entering
-          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
-          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
 
-        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+        <p>
+          For all specifications, this Working Group will seek 
+          <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for accessibility,
+          internationalization, privacy, and security with the relevant Working and Interest Groups, and with the 
+          <a href="https://www.w3.org/groups/other/tag/" title="Technical Architecture Group">TAG</a>. Invitation
+          for review must be issued during each major standards-track document transition, including 
+          <a href="https://www.w3.org/policies/process/#RecsWD" title="First Public Working Draft">FPWD</a>. The Working
+          Group is encouraged to engage collaboratively with the horizontal review groups throughout development of each
+          specification. The Working Group is advised to seek a review at least 3 months before first entering 
+          <a href="https://www.w3.org/policies/process/#RecsCR" title="Candidate Recommendation">CR</a> and
+          is encouraged to proactively notify the horizontal review groups when major changes occur in a specification following a
+          review.
+        </p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a
+          href="https://www.w3.org/policies/process/#WGCharter">W3C Process Document</a>:</p>
+
 
         <section>
             <h3 id="w3c-coordination">W3C Groups</h3>
@@ -761,8 +771,8 @@
         <p>
           The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
         </p>
-        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
-          W3C <a href="https://www.w3.org/Consortium/cepc/">Positive Work Environment at W3C: Code of Conduct</a>.</p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/policies/process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a>.</p>
       </section>
 
 
@@ -772,11 +782,11 @@
           Communication
         </h2>
         <p id="public">
-          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/policies/process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="">Verifiable Credentials Working Group home page.</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/2017/vc/WG/">Verifiable Credentials Working Group home page.</a>
         </p>
         <p>
           Most Verifiable Credentials Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
@@ -792,11 +802,7 @@
         <p>
           The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
         </p>
-        <p>
-          The group will publish minutes for each teleconference on the
-          <a  href="https://www.w3.org/2017/vc/WG/Meetings/Minutes/">Group's home page</a>.
-        </p>
-      </section>
+       </section>
 
 
       <!-- MARK: Decision Policy -->
@@ -805,7 +811,7 @@
           Decision Policy
         </h2>
         <p>
-          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus"> W3C Process Document (section 5.2.1 Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/policies/process/#Consensus"> W3C Process Document (section 5.2.1 Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
         <p>
            However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
         </p>
@@ -820,7 +826,7 @@
           All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
         </p>
         <p>
-          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
+          This charter is written in accordance with the <a href="https://www.w3.org/policies/process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
         </p>
       </section>
 
@@ -831,9 +837,9 @@
           Patent Policy
         </h2>
         <p>
-          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+          This Working Group operates under the <a href="https://www.w3.org/policies/patent-policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
 
-          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+          For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/groups/wg/vc/ipr/">licensing information</a>.
         </p>
 
       </section>
@@ -842,7 +848,7 @@
       <!-- MARK: Licensing -->
       <section id="licensing">
         <h2>Licensing</h2>
-        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+        <p>This Working Group will use the <a href="https://www.w3.org/copyright/software-license/">W3C Software and Document license</a> for all its deliverables.</p>
       </section>
 
       <section id="about">
@@ -850,7 +856,7 @@
           About this Charter
         </h2>
         <p>
-          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+          This charter has been created according to <a href="https://www.w3.org/policies/process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/policies/process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
         </p>
 
         <!-- MARK: Charter History -->
@@ -859,7 +865,7 @@
             Charter History
           </h3>
 
-          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
+          <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/policies/process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
 
 
           <table class="history">
@@ -1029,7 +1035,7 @@
                 <td>
                 </td>
                 <td>
-                  The document has fulfilled the criteria for <a href="#conditional-normative">conditional normative specification</a> to be added to the official deliverables of the Working Group.
+                  The document has fulfilled the criteria for <a href="https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html#conditional-normative">conditional normative specification</a> to be added to the official deliverables of the Working Group.
                 </td>
               </tr>
               <tr>
@@ -1118,9 +1124,10 @@
 
       <p class="copyright">
         <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©2024
-        <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>.
+        <a href="https://www.w3.org/">World Wide Web Consortium</a>.
 
-        <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+        <br><abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup> <a href="https://www.w3.org/policies/#disclaimers">liability</a>, <a href="https://www.w3.org/policies/#trademarks">trademark</a> 
+        and <a href="https://www.w3.org/copyright/software-license/">permissive document license</a> rules apply.
       </p>
       <hr>
       <p><a href="https://github.com/w3c/vc-wg-charter">Yes, it's on GitHub!</a>.</p>
