@@ -77,7 +77,10 @@
       <h1 id="title">[PROPOSED] Verifiable Credentials Working Group Charter</h1>
       <!-- delete PROPOSED after AC review completed -->
 
-      <p class="mission">The <strong>mission</strong> of the <a href="https://www.w3.org/2017/vc/WG/">Verifiable Credentials Working Group</a> is to make expressing, exchanging, and verifying credentials easier and more secure on the Web.</p>
+      <p class="mission">
+        The <strong>mission</strong> of the <a href="https://www.w3.org/2017/vc/WG/">Verifiable Credentials Working Group</a> is to maintain the W3C Recommendations, as well as related Notes, in the area of Verifiable Credentials published 
+        under the <a href="https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html">previous charter</a> of the Working Group. 
+      </p>
 
       <div class="noprint">
         <p class="join"><a href="https://www.w3.org/2004/01/pp-impl/98922/join">Join the Verifiable Credentials Working Group.</a></p>
@@ -142,57 +145,42 @@
       <!-- MARK: Background -->
       <section id="background" class="background">
         <h2>Motivation and Background</h2>
-      <p class="motivation">
-        Readers that are new to this work should read the <a href="https://www.w3.org/TR/vc-data-model-2.0/">latest Verifiable
-          Credentials Data Model</a>. The <a href="https://www.w3.org/TR/vc-data-model-2.0/#introduction">Introduction</a> and
-        <a href="https://www.w3.org/TR/vc-data-model-2.0/#terminology">Terminology</a> may be particularly helpful to W3C
-        Members
-        seeking to better understand some the terminology used in this charter e.g., Credentials vs. Verifiable Credentials
-        and Presentations vs. Verifiable Presentations.
-      </p>
-        <p>T.B.D.</p>
+        <p>
+          In the past few years the Working Group has developed a family of specifications in the area of Verifiable Credentials. 
+          They provide a mechanism to express "credentials" 
+          (driver's licenses, university degrees, government-issued residence permits, etc.) in a digital 
+          format on the Web that is cryptographically secure, privacy respecting, and machine-verifiable.
+          These technologies are being gradually adopted by various institutions, governmental or otherwise, in different 
+          countries around the globe.
+        </p>
+        
+        <p>
+          Readers that are new to this work should read the <a href="https://www.w3.org/TR/vc-overview/">Verifiable Credentials Overview</a> W3C Note, published by the Working Group. The Note help to understand better some the terminology used in this charter e.g., Verifiable Credentials and Presentation, Data Integrity, or cryptosuites. It also provides a technical overview on how the various specifications listed as
+          <a href="#deliverables">deliverables</a> relate to one another.
+        </p>
+
+        <p>
+          Under its <a href="https://www.w3.org/2022/06/verifiable-credentials-wg-charter.html">charter</a>, expiring in January 2025, the Working Group should finalize all its <a href="#deliverables">specifications</a>, 
+          thereby completing its work. 
+          Once all Recommendations are published, this Working Group will maintain the complete family of specifications and related notes.
+        </p>
       </section>
 
       <!-- MARK: Scope -->
       <section id="scope" class="scope">
         <h2>Scope</h2>
         <p>
-          Building on the experience gained through implementation, deployment and usage
-          of Verifiable Credentials (VCs), this Working Group will extend Verifiable
-          Credential foundations with new standardized technologies to improve the use of
-          this technology on the Web.
-        </p>
-        <p>
-          The <b>scope</b> of the Verifiable Credentials Working Group is:
-        </p>
-        <ul>
-          <li>Addressing errata, ambiguities, and interoperability problems found in previous versions of the Verifiable Credentials Data Model</li>
-          <li>A data model for Verifiable Credentials, inclusive of:</li>
-            <ul>
-                <li>Credentials and Verifiable Credentials</li>
-                <li>Presentations and Verifiable Presentations</li>
-                <li>requests for or submissions of Verifiable Credentials or Verifiable Presentations</li>
-            </ul>
-          <li>Registries for the data model to support extension points in the normative deliverables.</li>
-          <li>Algorithms for the expression and verification of proofs that use existing cryptographic primitives</li>
-          <li>Refining multilingual support in the data model</li>
-        </ul>
-        <p>
-          It is explicitly not a requirement that the new specifications be fully compatible with related past specifications.
-        </p>
-        <p>
-          Once all the planned Recommendations have been published (see <a href="#deliverables">list of deliverables below</a>), 
-          the Working Group will continue in maintenance mode to handle errata. No new Recommendations are planned. 
+          Once all the planned Recommendations have been published (see <a href="#deliverables">list of deliverables below</a>), the Working Group will continue in maintenance mode to handle errata. No new Recommendations are planned. 
           <a href="https://www.w3.org/2023/Process-20231103/#class-4">Class 4 changes</a> for these Recommendations 
           are <strong>out of scope</strong>, <em><strong>except</strong></em>: 
         </p>
 
         <ul>
           <li>
-            Features that had been listed as "At Risk" during the CR phase of the Verifiable Data Model 
-            specification, had been removed from the final document due to missing the CR Exit Criteria, but 
-            have been developed further by the community providing a possibly adequate consensus and support 
-            to be added to the Recommendation. At the time of writing this charter, these terms are: 
+            Features that had been listed as <a href="https://www.w3.org/TR/vc-data-model-2.0/#reserved-extension-points">Reserved Extension Points</a> in the Verifiable Data Model 
+            specification, but have been developed further by the community providing a possibly 
+            adequate consensus and support  to be added to the Recommendation. 
+            At the time of writing this charter, these terms are: 
             the <code>refreshService</code>, <code>evidence</code>, <code>confidenceMethod</code>, 
             <code>renderMethod</code>, and <code>termsOfUse</code> properties (and related classes like 
             <code>RefreshService</code>, <code>ConfidenceMethod</code>, etc.).
@@ -508,7 +496,7 @@
           </dl>
         </section>
 
-        <section id="conditional-normative">
+        <!-- <section id="conditional-normative">
           <h3>
             Tentative Deliverables
           </h3>
@@ -561,9 +549,9 @@
               or other externally standardized cryptographic primitives may be produced under
               the same conditions.
           </p>
-        </section>
+        </section> -->
 
-        <section id="normative">
+        <!-- <section id="normative">
           <h3>
             Registries
           </h3>
@@ -577,7 +565,7 @@
             deliverables (for example, Verifiable Credential properties that MUST be included in
             a Verifiable Credential), must have at least one standardized entry.
           </p>
-        </section>
+        </section> -->
 
         <section id="ig-other-deliverables">
           <h3>
